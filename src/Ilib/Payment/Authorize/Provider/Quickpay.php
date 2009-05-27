@@ -107,7 +107,7 @@ class Ilib_Payment_Authorize_Provider_Quickpay extends Ilib_Payment_Authorize_Pr
     public function getPostProcess($get, $post, $session, $payment_target)
     {
         if(!isset($this->post_process)) {
-            $this->post_process = new Ilib_Payment_Authorize_Provider_Quickpay_Postprocess(
+            $this->post_process = new Ilib_Payment_Authorize_Provider_Quickpay_PostProcess(
                 $this->getMerchant(), 
                 $this->getVerificationKey(),
                 $get, 
